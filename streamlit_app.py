@@ -6,8 +6,13 @@ st.set_page_config(page_title="School Guide AI", page_icon="🏫")
 st.title("🏫 Pradhan Public School: Smart AI Guide")
 st.write("प्रिंसिपल मैम और मैनेजमेंट के लिए स्पेशल वर्ज़न! ✨")
 
-# 2. सीक्रेट चाबी (API Key) सेट करना
-API_KEY = "AQ.Ab8RN6JG6esOGXo9BxWazXEfyONiuUUDTtIgupTvQwth_Lgz0A"
+# 2. import streamlit as st
+import google.generativeai as genai
+
+# यह लाइन पक्का लिखो
+API_KEY = st.secrets["API_KEY"]
+genai.configure(api_key=API_KEY)
+
 genai.configure(api_key=API_KEY)
 
 # 3. स्कूल का पूरा डेटा और सारथी के संस्कार (Full Memory)
