@@ -7,7 +7,7 @@ st.title("🏫 Pradhan Public School: Smart AI Guide")
 st.write("प्रिंसिपल मैम और मैनेजमेंट के लिए स्पेशल वर्ज़न! ✨")
 
 # 2. सीक्रेट चाबी (API Key) सेट करना
-API_KEY = "AQ.Ab8RN6LBFczMYeI1RWBnSfnr0ZUnVUOK9sZCEVGevckE9-eAvg"
+API_KEY = "AQ.Ab8RN6Jr9TySKKYfzjRDfHSDUvzY4gPb--DznGXjPOHhxVuKpA"
 genai.configure(api_key=API_KEY)
 
 # 3. स्कूल का पूरा डेटा और सारथी के संस्कार (Full Memory)
