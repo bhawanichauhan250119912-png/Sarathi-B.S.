@@ -6,13 +6,12 @@ st.set_page_config(page_title="School Guide AI", page_icon="🏫")
 st.title("🏫 Pradhan Public School: Smart AI Guide")
 st.write("प्रिंसिपल मैम और मैनेजमेंट के लिए स्पेशल वर्ज़न! ✨")
 
-from google import genai
 
 client = genai.Client(api_key="AQ.Ab8RN6KS4kUQUAXGCl9YJo3uUJivYCKjnmh6-MdoxIZdchWU-g")
 
 response = client.models.generate_content(
     model="gemini-3.5-flash",
-    contents="Explain how AI works in a few words"
+    contents="Explain how AI works in a few words"{
 )
 print(response.text)
 
