@@ -13,7 +13,7 @@ import google.generativeai as genai
 import os
 
 
-API_KEY = " AQ.Ab8RN6IWUkKUYuZn6M0KaVnjHQMifEzf6C2yNzNjHvyprWZEKA "
+API_KEY = "AQ.Ab8RN6K-Mkm84P2hwmgyspocA02Uw6UuafZmQsUmOmYQMdQxxg"
 
 
 os.environ["GOOGLE_API_KEY"] = API_KEY
