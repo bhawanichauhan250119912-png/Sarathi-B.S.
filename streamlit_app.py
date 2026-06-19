@@ -6,18 +6,15 @@ st.set_page_config(page_title="School Guide AI", page_icon="🏫")
 st.title("🏫 Pradhan Public School: Smart AI Guide")
 st.write("प्रिंसिपल मैम और मैनेजमेंट के लिए स्पेशल वर्ज़न! ✨")
 
-# 2. import streamlit as st
-import google.generativeai as genai
-import streamlit as st
-import google.generativeai as genai
-import os
+from google import genai
 
+client = genai.Client(api_key="AQ.Ab8RN6KS4kUQUAXGCl9YJo3uUJivYCKjnmh6-MdoxIZdchWU-g")
 
-API_KEY = "AQ.Ab8RN6K-Mkm84P2hwmgyspocA02Uw6UuafZmQsUmOmYQMdQxxg"
-
-
-os.environ["GOOGLE_API_KEY"] = API_KEY
-genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+response = client.models.generate_content(
+    model="gemini-3.5-flash",
+    contents="Explain how AI works in a few words"
+)
+print(response.text)
 
 
 # 3. स्कूल का पूरा डेटा और सारथी के संस्कार (Full Memory)
